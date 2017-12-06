@@ -324,7 +324,7 @@
                 let obj = [];
 
                 init();
-                animate();
+//                animate();
 
                 this.circle();
 
@@ -406,21 +406,16 @@
                 }
 
                 function onWindowResize() {
-
                     windowHalfX = window.innerWidth / 2;
                     windowHalfY = window.innerHeight / 2;
-
                     camera.aspect = window.innerWidth / window.innerHeight;
                     camera.updateProjectionMatrix();
-
                     renderer.setSize( window.innerWidth, window.innerHeight );
-
                 }
 
                 function animate() {
                     requestAnimationFrame( animate );
                     render();
-
                 }
 
                 function render() {
@@ -507,7 +502,7 @@
         padding: 100px 0;
         text-align: center;
         position: relative;
-        background: $color-1;
+        background: #082c6a;
 
 
         .container{
