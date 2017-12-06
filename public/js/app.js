@@ -17144,9 +17144,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 scene = void 0,
                 renderer = void 0;
             var obj = [];
-            //                init();
-            //                animate();
-            //                this.circle();
+            init();
+            animate();
+            this.circle();
 
             var object = void 0;
             function init() {

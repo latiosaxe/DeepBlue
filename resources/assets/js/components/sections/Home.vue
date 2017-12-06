@@ -298,9 +298,9 @@
                 let colors = [0x839fcd, 0x9eb4d8, 0xc6d3e8];
                 let camera, scene, renderer;
                 let obj = [];
-//                init();
-//                animate();
-//                this.circle();
+                init();
+                animate();
+                this.circle();
 
                 let object;
                 function init() {
