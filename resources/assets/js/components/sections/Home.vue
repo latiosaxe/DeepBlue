@@ -508,7 +508,14 @@
     .aditional{
         padding: 35px 0;
         p{
+            margin: 0;
+            padding: 2rem 15px;
             color: $color-2;
+            font-size: 2rem;
+            &:nth-of-type(2n){
+                color: #FFF;
+                background: $color-2;
+             }
         }
     }
 </style>
