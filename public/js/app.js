@@ -16774,7 +16774,7 @@ exports = module.exports = __webpack_require__(37)(undefined);
 
 
 // module
-exports.push([module.i, "\n.container {\n  width: 100%;\n  margin: 0 auto;\n  display: block;\n  padding: 0 15px;\n  max-width: 1200px;\n}\n.section {\n  height: 100vh;\n  min-height: 500px;\n  position: relative;\n}\n.section .logo {\n    z-index: 9;\n    max-height: 30%;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    margin: auto;\n    position: absolute;\n}\n.section .logo img {\n      height: 100%;\n      display: block;\n      margin: 0 auto;\n      max-height: 500px;\n}\n.section .logo h2 {\n      color: #FFF;\n      display: block;\n      margin: 0 auto;\n      max-width: 500px;\n      text-align: center;\n      /*text-shadow: 0 0 10px rgba(0,0,0,0.5);*/\n}\n.subscribe {\n  color: #000;\n  font-size: 2rem;\n  padding: 100px 0;\n  text-align: center;\n  position: relative;\n  background: #1b5dd5;\n}\n.subscribe .container {\n    top: 50%;\n    left: 0;\n    right: 0;\n    position: absolute;\n    -webkit-transform: translateY(-50%);\n            transform: translateY(-50%);\n}\n.subscribe .text, .subscribe form, .subscribe button {\n    color: #FFF;\n    font-size: 2rem;\n    margin-right: 20px;\n    display: inline-block;\n    vertical-align: middle;\n}\n.subscribe .text {\n    font-size: 3rem;\n    -webkit-transform: translate3d(40px, -65px, 0);\n            transform: translate3d(40px, -65px, 0);\n}\n.subscribe input[type=\"email\"] {\n    color: #FFF;\n    font-size: 2rem;\n    padding: 10px 40px;\n    display: inline-block;\n    vertical-align: middle;\n    border: 2px solid #FFF;\n    background: transparent;\n}\n.subscribe input[type=\"email\"]::-webkit-input-placeholder {\n      /* Chrome/Opera/Safari */\n      color: #FFF;\n}\n.subscribe input[type=\"email\"]::-moz-placeholder {\n      /* Firefox 19+ */\n      color: #FFF;\n}\n.subscribe input[type=\"email\"]:-ms-input-placeholder {\n      /* IE 10+ */\n      color: #FFF;\n}\n.subscribe input[type=\"email\"]:-moz-placeholder {\n      /* Firefox 18- */\n      color: #FFF;\n}\n.subscribe button {\n    color: #fff;\n    padding: 10px 40px;\n    display: inline-block;\n    vertical-align: middle;\n    border: 2px solid #FFF;\n    border-radius: 0;\n    background: transparent;\n}\n", ""]);
+exports.push([module.i, "\n.container {\n  width: 100%;\n  margin: 0 auto;\n  display: block;\n  padding: 0 15px;\n  max-width: 1200px;\n}\n.section {\n  height: 100vh;\n  min-height: 500px;\n  position: relative;\n}\n.section .logo {\n    z-index: 9;\n    max-height: 30%;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    margin: auto;\n    position: absolute;\n}\n.section .logo img {\n      height: 100%;\n      display: block;\n      margin: 0 auto;\n      max-height: 500px;\n}\n.section .logo h2 {\n      color: #FFF;\n      display: block;\n      margin: 0 auto;\n      max-width: 500px;\n      text-align: center;\n      /*text-shadow: 0 0 10px rgba(0,0,0,0.5);*/\n}\n.subscribe {\n  color: #000;\n  font-size: 2rem;\n  padding: 100px 0;\n  text-align: center;\n  position: relative;\n  background: #1b5dd5;\n}\n.subscribe .container {\n    top: 50%;\n    left: 0;\n    right: 0;\n    position: absolute;\n    -webkit-transform: translateY(-50%);\n            transform: translateY(-50%);\n}\n.subscribe .text, .subscribe form, .subscribe button {\n    color: #FFF;\n    font-size: 2rem;\n    margin-right: 20px;\n    display: inline-block;\n    vertical-align: middle;\n}\n.subscribe .text {\n    font-size: 3rem;\n    -webkit-transform: translate3d(40px, -65px, 0);\n            transform: translate3d(40px, -65px, 0);\n}\n.subscribe input[type=\"email\"] {\n    color: #FFF;\n    font-size: 2rem;\n    padding: 10px 40px;\n    display: inline-block;\n    vertical-align: middle;\n    border: 2px solid #FFF;\n    background: transparent;\n}\n.subscribe input[type=\"email\"]::-webkit-input-placeholder {\n      /* Chrome/Opera/Safari */\n      color: #FFF;\n}\n.subscribe input[type=\"email\"]::-moz-placeholder {\n      /* Firefox 19+ */\n      color: #FFF;\n}\n.subscribe input[type=\"email\"]:-ms-input-placeholder {\n      /* IE 10+ */\n      color: #FFF;\n}\n.subscribe input[type=\"email\"]:-moz-placeholder {\n      /* Firefox 18- */\n      color: #FFF;\n}\n.subscribe button {\n    color: #fff;\n    padding: 10px 40px;\n    display: inline-block;\n    vertical-align: middle;\n    border: 2px solid #FFF;\n    border-radius: 0;\n    background: transparent;\n}\n.aditional {\n  padding: 35px 0;\n}\n.aditional p {\n    color: #1b5dd5;\n}\n", ""]);
 
 // exports
 
@@ -16798,6 +16798,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -18149,7 +18156,9 @@ var render = function() {
         _vm._v(" "),
         _c("div", { attrs: { id: "circleCanvas" } })
       ])
-    ])
+    ]),
+    _vm._v(" "),
+    _vm._m(2, false, false)
   ])
 }
 var staticRenderFns = [
@@ -18179,6 +18188,28 @@ var staticRenderFns = [
       _vm._v("Aplica para el "),
       _c("strong", [_vm._v("AirDrop")]),
       _vm._v(".")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "aditional" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("p", [
+          _vm._v(
+            "Desata todo el poder computacional de billones de terabytes subutilizados."
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", [_vm._v("Early adopt this ethereum estándar.")]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "Mejora el mundo incluyendo a los excluidos y ahorrando energía computacional."
+          )
+        ])
+      ])
     ])
   }
 ]

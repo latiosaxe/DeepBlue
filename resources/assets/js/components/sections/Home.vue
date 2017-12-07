@@ -19,6 +19,13 @@
                 <div id="circleCanvas"></div>
             </div>
         </div>
+        <div class="aditional">
+            <div class="container">
+                <p>Desata todo el poder computacional de billones de terabytes subutilizados.</p>
+                <p>Early adopt this ethereum estándar.</p>
+                <p>Mejora el mundo incluyendo a los excluidos y ahorrando energía computacional.</p>
+            </div>
+        </div>
     </div>
 </template>
 <script>
@@ -404,6 +411,8 @@
 
 <style lang="scss">
     $color-1: #426cb4;
+    $color-2: #1b5dd5;
+
     .container{
         width: 100%;
         margin: 0 auto;
@@ -415,30 +424,30 @@
         height: 100vh;
         min-height: 500px;
         position: relative;
-    .logo{
-        z-index: 9;
-        max-height: 30%;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        position: absolute;
-    img{
-        height: 100%;
-        display: block;
-        margin: 0 auto;
-        max-height: 500px;
-    }
-    h2{
-        color: #FFF;
-        display: block;
-        margin: 0 auto;
-        max-width: 500px;
-        text-align: center;
-        /*text-shadow: 0 0 10px rgba(0,0,0,0.5);*/
-    }
-    }
+        .logo{
+            z-index: 9;
+            max-height: 30%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            position: absolute;
+            img{
+                height: 100%;
+                display: block;
+                margin: 0 auto;
+                max-height: 500px;
+            }
+            h2{
+                color: #FFF;
+                display: block;
+                margin: 0 auto;
+                max-width: 500px;
+                text-align: center;
+                /*text-shadow: 0 0 10px rgba(0,0,0,0.5);*/
+            }
+        }
     }
     .subscribe{
         color: #000;
@@ -446,56 +455,60 @@
         padding: 100px 0;
         text-align: center;
         position: relative;
-        background: #1b5dd5;
-    .container{
-        top: 50%;
-        left: 0;
-        right: 0;
-        position: absolute;
-        transform: translateY(-50%);
+        background: $color-2;
+        .container{
+            top: 50%;
+            left: 0;
+            right: 0;
+            position: absolute;
+            transform: translateY(-50%);
+        }
+        .text, form, button{
+            color: #FFF;
+            font-size: 2rem;
+            margin-right: 20px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .text{
+            font-size: 3rem;
+            transform: translate3d(40px, -65px, 0);
+        }
+        input[type="email"]{
+            color: #FFF;
+            font-size: 2rem;
+            padding: 10px 40px;
+            display: inline-block;
+            vertical-align: middle;
+            border: 2px solid #FFF;
+            background: transparent;
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+             color: #FFF;
+         }
+        &::-moz-placeholder { /* Firefox 19+ */
+             color: #FFF;
+         }
+        &:-ms-input-placeholder { /* IE 10+ */
+             color: #FFF;
+         }
+        &:-moz-placeholder { /* Firefox 18- */
+             color: #FFF;
+         }
+        }
+        button{
+            color: #fff;
+            padding: 10px 40px;
+            display: inline-block;
+            vertical-align: middle;
+            border: 2px solid #FFF;
+            border-radius: 0;
+            background: transparent;
+        }
     }
-    .text, form, button{
-        color: #FFF;
-        font-size: 2rem;
-        margin-right: 20px;
-        display: inline-block;
-        vertical-align: middle;
-    }
-    .text{
-        font-size: 3rem;
-        transform: translate3d(40px, -65px, 0);
-    }
-    input[type="email"]{
-        color: #FFF;
-        font-size: 2rem;
-        padding: 10px 40px;
-        display: inline-block;
-        vertical-align: middle;
-        border: 2px solid #FFF;
-        background: transparent;
-    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-         color: #FFF;
-     }
-    &::-moz-placeholder { /* Firefox 19+ */
-         color: #FFF;
-     }
-    &:-ms-input-placeholder { /* IE 10+ */
-         color: #FFF;
-     }
-    &:-moz-placeholder { /* Firefox 18- */
-         color: #FFF;
-     }
-    }
-    button{
-        color: #fff;
-        padding: 10px 40px;
-        display: inline-block;
-        vertical-align: middle;
-        border: 2px solid #FFF;
-        border-radius: 0;
-        background: transparent;
-    }
-    }
-    #circleCanvas{
+    .aditional{
+        padding: 35px 0;
+        p{
+            color: $color-2;
+        }
     }
 </style>
