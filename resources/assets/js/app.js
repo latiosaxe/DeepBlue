@@ -5,6 +5,10 @@ Vue.use(VueRouter);
 import VueAxios from 'vue-axios';
 import axios from 'axios';
 Vue.use(VueAxios, axios);
+
+import VueSweetAlert from 'vue-sweetalert'
+Vue.use(VueSweetAlert)
+
 import App from './components/App.vue';
 import Home from './components/sections/Home.vue';
 const routes = [

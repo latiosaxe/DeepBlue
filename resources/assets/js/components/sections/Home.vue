@@ -10,7 +10,7 @@
         <div class="">
             <div class="subscribe">
                 <div class="container">
-                    <div class="text">Aplica para el AirDrop.</div>
+                    <div class="text">Aplica para el <strong>AirDrop</strong>.</div>
                     <form @submit.prevent="submitEmail">
                         <input type="email" v-model="userEmail" placeholder="correo@ejemplo.com">
                         <button type="submit">Enviar</button>
@@ -23,28 +23,31 @@
 </template>
 <script>
     import axios from 'axios';
+    import VueSweetAlert from 'vue-sweetalert';
+
 
     export default {
         name: 'Home',
         data () {
             return {
-                userEmail: ''
+                userEmail: '',
+                hero: {
+                    particles: 80
+                }
             }
         },
         methods: {
             submitEmail: function (event) {
                 event.preventDefault();
-                console.log( this.userEmail );
 
                 let self = this;
-
                 axios.post('/newsletterUser', {
                     email: self.userEmail
                 })
                 .then(function (response) {
                     console.log(response);
                     self.userEmail = '';
-                    alert("Gracias por registrarte, te enviaremos las instrucciones próximamente");
+                    self.$swal('Gracias por registrarte, te enviaremos las instrucciones próximamente');
                 })
                 .catch(function (error) {
                     console.log(error);
@@ -293,6 +296,7 @@
             }
         },
         mounted(){
+            self = this;
             setTimeout( function () {
                 let container;
                 let colors = [0x839fcd, 0x9eb4d8, 0xc6d3e8];
@@ -336,16 +340,16 @@
                     light.shadowCameraFar = 4000;
                     light.shadowDarkness = 0.1;
                     scene.add(light);
-                    let manager = new THREE.LoadingManager();
+//                    let manager = new THREE.LoadingManager();
                     let group = new THREE.Group();
                     scene.add(group);
-                    while(obj.length < 200){
+                    while(obj.length < self.hero.particles){
                         let item = new Tetrahedron();
                         obj.push(item)
                     }
                     for (let i = 0; i < obj.length; i++) {
                         group.add(obj[i].shape);
-                    };
+                    }
                     renderer = new THREE.WebGLRenderer({antialias: true});
                     renderer.shadowMapEnabled = true;
                     renderer.shadowMapSoft = true;
@@ -354,15 +358,15 @@
                     renderer.setSize( window.innerWidth, window.innerHeight );
                     container.appendChild( renderer.domElement );
                     // controls = new THREE.OrbitControls(camera, document, renderer.domElement);
-                    window.addEventListener( "resize", onWindowResize, false );
+//                    window.addEventListener( "resize", onWindowResize, false );
                 }
-                function onWindowResize() {
-                    let windowHalfX = window.innerWidth / 2;
-                    let windowHalfY = window.innerHeight / 2;
-                    camera.aspect = window.innerWidth / window.innerHeight;
-                    camera.updateProjectionMatrix();
-                    renderer.setSize( window.innerWidth, window.innerHeight );
-                }
+//                function onWindowResize() {
+//                    let windowHalfX = window.innerWidth / 2;
+//                    let windowHalfY = window.innerHeight / 2;
+//                    camera.aspect = window.innerWidth / window.innerHeight;
+//                    camera.updateProjectionMatrix();
+//                    renderer.setSize( window.innerWidth, window.innerHeight );
+//                }
                 function animate() {
                     requestAnimationFrame( animate );
                     render();
@@ -457,6 +461,10 @@
         display: inline-block;
         vertical-align: middle;
     }
+    .text{
+        font-size: 3rem;
+        transform: translate3d(40px, -65px, 0);
+    }
     input[type="email"]{
         color: #FFF;
         font-size: 2rem;
@@ -484,6 +492,7 @@
         display: inline-block;
         vertical-align: middle;
         border: 2px solid #FFF;
+        border-radius: 0;
         background: transparent;
     }
     }
