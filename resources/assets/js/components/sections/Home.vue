@@ -472,10 +472,11 @@
     .subscribe{
         color: #000;
         font-size: 2rem;
-        padding: 100px 0;
+        /*padding: 100px 0;*/
         text-align: center;
         position: relative;
         background: $color-2;
+        overflow: hidden;
         .container{
             top: 50%;
             left: 0;
