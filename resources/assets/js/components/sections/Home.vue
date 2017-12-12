@@ -421,6 +421,10 @@
 </script>
 
 <style lang="scss">
+    body{
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
     $color-1: #426cb4;
     $color-2: #1b5dd5;
 
