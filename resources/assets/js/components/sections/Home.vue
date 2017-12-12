@@ -7,23 +7,34 @@
             </div>
             <div id="canvasHome"></div>
         </div>
-        <div class="">
-            <div class="subscribe">
-                <div class="container">
-                    <div class="text">Aplica para el <strong>AirDrop</strong>.</div>
-                    <form @submit.prevent="submitEmail">
-                        <input type="email" v-model="userEmail" placeholder="correo@ejemplo.com">
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-                <div id="circleCanvas"></div>
+        <div class="description">
+            <div class="container">
+                <p>
+                    DeepBlue is the ERC20 Ethereum Standard Token that takes advantage of all the processing power
+                    provided by embedded devices, low-latency systems, regular cpu computers and the ever growing amount
+                    of internet of things devices. DeepBlue maximizes the use of this power and groups small quantities of
+                    power into huge processing on-chain superprocessors.
+                </p>
             </div>
         </div>
         <div class="aditional">
             <div class="container">
-                <p>Desata todo el poder computacional de billones de terabytes subutilizados.</p>
-                <p>Early adopt this ethereum estándar.</p>
-                <p>Mejora el mundo incluyendo a los excluidos y ahorrando energía computacional.</p>
+                <p>Early adopt this ERC20 Ethereum Standard.</p>
+                <p>Unlock all the power provided by millions of devices.</p>
+                <p>Improve the world including the excluded people and computers into the blockchain usage.</p>
+                <p>Use or create meaningful ways to exchange processing power for everybody.</p>
+            </div>
+        </div>
+        <div class="">
+            <div class="subscribe">
+                <div class="container">
+                    <div class="text">Apply for <strong>AirDrop</strong>.</div>
+                    <form @submit.prevent="submitEmail">
+                        <input type="email" v-model="userEmail" placeholder="alex@domain.com">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div id="circleCanvas"></div>
             </div>
         </div>
     </div>
