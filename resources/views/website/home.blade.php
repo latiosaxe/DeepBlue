@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Deep Blue | ERC20 Ethereum Standard Token for Embedded Computing</title>
     <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
+    <meta name="description" content="ERC20 Ethereum Standard Token for Embedded Computing"/>
 
 
     <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">

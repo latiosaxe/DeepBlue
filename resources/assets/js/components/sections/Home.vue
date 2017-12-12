@@ -460,6 +460,15 @@
             }
         }
     }
+    .description{
+        padding: 50px 0 0;
+        font-size: 2rem;
+        line-height: 140%;
+        letter-spacing: 2px;
+        .container{
+            max-width: 600px;
+        }
+    }
     .subscribe{
         color: #000;
         font-size: 2rem;
@@ -517,7 +526,7 @@
         }
     }
     .aditional{
-        padding: 35px 0;
+        padding: 35px 0 50px;
         p{
             margin: 0;
             padding: 2rem 15px;
